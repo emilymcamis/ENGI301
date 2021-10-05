@@ -1,5 +1,12 @@
-"""License:   
-Copyright 2021 <NAME>
+"""  
+--------------------------------------------------------------------------
+PocketBeagle US3R 5Hz US3R Blinker
+--------------------------------------------------------------------------
+Authors: Emily McAmis (erm8@rice.edu)
+
+Copyright 2021, Emily McAmis
+
+Licnese:
 
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met:
@@ -28,31 +35,23 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
 
-Simple calculator that will 
-  - Take in two numbers from the user
-  - Take in an operator from the user
-  - Perform the mathematical operation and provide the number to the user
-  - Repeat
+Simple LED blinker that will:
+  - Utilize The Adafruit BBIO library
+  - Blink the USR3 light on the PocketBeagle at 5 Hz
 
-Operations:
-  - addition
-  - subtraction
-  - multiplication
-  - division
-
-Error conditions:
-  - Invalid operator --> Program should exit
-  - Invalid number   --> Program should exit
 
 --------------------------------------------------------------------------
 """
 
+#Importing necessary libraries
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
 GPIO.setup("USR3", GPIO.OUT)
 
+#While loop continues as long as the program is running
 while True:
+    #To output a 5Hz signal, each half of the cycle should be 0.1 seconds. "High" represents the light being on and "low represents the light being off
     GPIO.output("USR3", GPIO.HIGH)
     time.sleep(.1)
     GPIO.output("USR3", GPIO.LOW)
