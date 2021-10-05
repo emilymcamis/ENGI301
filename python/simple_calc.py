@@ -2,8 +2,11 @@
 --------------------------------------------------------------------------
 Simple Calculator
 --------------------------------------------------------------------------
-License:   
-Copyright 2021 <NAME>
+Authors: Emily McAmis (erm8@rice.edu) and Erik Welsh (welsh@rice.edu)
+
+Copyright 2021 Emily McAmis
+
+License: 
 
 Redistribution and use in source and binary forms, with or without 
 modification, are permitted provided that the following conditions are met:
@@ -61,7 +64,7 @@ import operator
 # Global variables
 # ------------------------------------------------------------------------
 
-
+#Listing operators
 operators = {
     "+" : operator.add,
     "-" : operator.sub,
@@ -101,6 +104,7 @@ def get_user_input():
 
 if __name__ == "__main__":
     
+    #This allows Python2 to run the calculator since Python3 accepts "input()" and Python 2 accepts "raw_input()"
     try:
         input = raw_input
     except NameError:
@@ -114,6 +118,7 @@ if __name__ == "__main__":
     
         function = operators.get(operator, None)
         
+        #Converts inputs to integers if user uses right or left shift operator
         if operator == "rs" or operator == "ls":
             number1=int(number1)
             number2=int(number2)
