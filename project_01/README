@@ -1,0 +1,32 @@
+README
+
+------------------------------------------------------------------------
+README for Project 01
+------------------------------------------------------------------------
+
+BUILD INSTRUCTIONS
+1. Collect necessary hardware
+2. Solder the pocketbeagle pins
+3. Connect the USB adapter to the breadboard and female USB into the adapter. Then, add the PocketBeagle so that header pin P1_1 is in hole a1.
+4. Connect the LEDs to the following pins. Use a 100 ohm resistor for each pin, and make sure the shorter wire of the LED is connected to ground. 
+In the orientation of the device, A-F LEDs should be arranged from left to right, and flatter to sharper should be arranged left to right (flatter, 
+flat, green/in-tune, sharp, sharper)
+LED pins:
+
+blue_led_A="P2_2", blue_led_B="P2_4", blue_led_C="P2_6",
+
+blue_led_D="P2_8", blue_led_E="P2_10", blue_led_F="P2_18",
+
+blue_led_G="P2_20", yellow_led_flatter="P2_22",
+
+yellow_led_flat="P2_24", green_led="P2_33",
+
+yellow_led_sharp="P2_35", yellow_led_sharper="P1_34"
+
+5. Next, connect the HEX display. Connect the "+" pin to a 3.3V input and the "-" pin the ground. Connect C and D to i2c bus 1 (P2_9 and P2_11 
+respectively). Add two pull-up resistors: these will connect from either D or C to a 3.3V rail on the breadboard.
+
+OPERATION INSTRUCTIONS
+1. Run code
+2. Play tone for 3 sec
+3. LEDs and hex display will show frequency and note value
