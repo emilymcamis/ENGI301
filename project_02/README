@@ -1,0 +1,31 @@
+"""
+
+------------------------------------------------------------------------
+README for Project 02
+------------------------------------------------------------------------
+BUILD INSTRUCTIONS:
+    1. Download latest version of Autodesk Eagle
+    2. Create a library necessary devices. Each device should have a symbol and footprint. 
+       - Hex Display
+       - 292303-1 USB Adapter
+       - Pocketbeagle
+       - Frame
+       - Resistor
+       - GND
+       - CGND
+       - LED
+       - 5V
+       - 1P8V
+       - 3P3V
+       - Fiducial
+       - Mounting hole
+    3. Create a schematic using the devices in the library
+    4. Use the schematic to create the ratsnest on the board
+    5. Route all the airwires
+       - for signals: 10 mil trace and 10 mil space
+       - for gnd/pwr: 15 mil trace and 15 mil space
+       - for vias: 12 mil drill and 24 mil vias
+    6. Generate gerber files, then use gerbv to view
+------------------------------------------------------------------------
+
+"""
