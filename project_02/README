@@ -3,7 +3,11 @@
 ------------------------------------------------------------------------
 README for Project 02
 ------------------------------------------------------------------------
-BUILD INSTRUCTIONS:
+The goal of this project was to create a PCB design based off of the a PocketBeagle music tuner (see my project 1 folder). Project was completed in Autodesk EAGLE. 
+This repository contains my project proposal, a library with the necessary devices, a pdf of the schematic, the EAGLE files for schematic/board, and a bill-of-materials.
+Project and wiring was slightly modified from original project and project proposal to optimize routing. 
+
+Steps followed to create project:
     1. Download latest version of Autodesk Eagle
     2. Create a library necessary devices. Each device should have a symbol and footprint. 
        - Hex Display
