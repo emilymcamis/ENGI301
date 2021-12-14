@@ -23,13 +23,14 @@ Steps followed to create project:
        - 3P3V
        - Fiducial
        - Mounting hole
-    3. Create a schematic using the devices in the library
-    4. Use the schematic to create the ratsnest on the board
-    5. Route all the airwires
+    3. Create a schematic using the devices in the library. 
+    5. Arrange the devices on the .brd file. 
+    6. Upload the design rules file.
+    7. Route all the airwires. Change schematics and connections as necessary to ensure proper routing. 
        - for signals: 10 mil trace and 10 mil space
        - for gnd/pwr: 15 mil trace and 15 mil space
        - for vias: 12 mil drill and 24 mil vias
-    6. Generate gerber files, then use gerbv to view
+    8. Generate gerber files, then use gerbv to view
 ------------------------------------------------------------------------
 
 """
